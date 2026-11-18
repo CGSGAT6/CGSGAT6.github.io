@@ -1,0 +1,7 @@
+JointJS 4.3.4
+The unmodified library source is available at https://registry.npmjs.org/@joint/core/-/core-4.3.4.tgz
+License: Mozilla Public License 2.0 (jointjs.txt).
+
+Lucide 0.577.0
+https://github.com/lucide-icons/lucide
+License and attributions: lucide.txt.
