@@ -1,0 +1,21 @@
+{
+  "format": "escheme/v1",
+  "name": "Проверка закона Ома",
+  "parts": [
+    {"id":"G1", "type":"battery", "at":[80,200], "rotate":90, "value":"6 В"},
+    {"id":"R1", "type":"resistor", "at":[330,100], "value":"100 Ом"},
+    {"id":"PA1", "type":"ammeter", "at":[540,200], "rotate":90},
+    {"id":"PV1", "type":"voltmeter", "at":[330,220]},
+    {"id":"J1", "type":"junction", "at":[220,100]},
+    {"id":"J2", "type":"junction", "at":[440,100]}
+  ],
+  "wires": [
+    {"from":"G1.a", "to":"J1.a", "via":[[80,100]]},
+    {"from":"J1.a", "to":"R1.a"},
+    {"from":"R1.b", "to":"J2.a"},
+    {"from":"J2.a", "to":"PA1.a", "via":[[540,100]]},
+    {"from":"PA1.b", "to":"G1.b", "via":[[540,320],[80,320]]},
+    {"from":"J1.a", "to":"PV1.a", "via":[[220,220]]},
+    {"from":"PV1.b", "to":"J2.a", "via":[[440,220]]}
+  ]
+}
